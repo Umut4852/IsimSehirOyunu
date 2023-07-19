@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".sureliOyunActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="Puanınız :"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtrekor"
+        app:layout_constraintEnd_toStartOf="@+id/txtrekor"
+        app:layout_constraintStart_toEndOf="@+id/restart" />
+
+    <TextView
+        android:id="@+id/txtrekor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="71dp"
+        android:hint="Rekor 1907"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bilgitxt"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="131dp"
+        android:text="X Harfli İlimiz"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tahminedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt" />
+
+    <TextView
+        android:id="@+id/ilgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="-----"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ettahmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/alharf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Harf AL"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ilgview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminedittext" />
+
+    <Button
+        android:id="@+id/ettahmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="261dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:hapticFeedbackEnabled="false"
+        android:text="Tahmin Et"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tahminedittext"
+        app:layout_constraintStart_toEndOf="@+id/tahminedittext" />
+
+    <EditText
+        android:id="@+id/tahminedittext"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Tahmininizi Giriniz"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ettahmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ilgview" />
+
+    <TextView
+        android:id="@+id/txtKalanSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="3:00"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt" />
+
+    <ImageButton
+        android:id="@+id/restart"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
