@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     timeTurkey = response.body();
 
+                    //retry mekanizması geliştirilecek
+
                     if (timeTurkey != null) {
                       //  txttarih.setText(timeTurkey.getDateTime());
                         txttarih.setText(timeTurkey.getDateTime().split("T")[0]);
