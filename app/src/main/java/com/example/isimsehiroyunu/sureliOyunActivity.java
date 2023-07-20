@@ -36,7 +36,7 @@ public class sureliOyunActivity extends AppCompatActivity {
 
     private Random rndIl, rndharf;
     private int rndilnumber, rndharfnumber, baslangicharfsayisi;
-    private int toplamsure=10000;
+    private int toplamsure=300000;
     private String gelenil, ilboyut = "", gelentahmin;
     private int toplampuan = 0, dogrupuan = 10, azalacakpuan = 3, harfpuan = 2, bospuan = 1;
 

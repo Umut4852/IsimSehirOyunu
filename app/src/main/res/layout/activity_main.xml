@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorPressedHighlight"
     tools:context=".MainActivity">
 
     <Button
@@ -11,15 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="50dp"
-        android:background="#FFEB3B"
 
+        android:backgroundTint="@color/material_on_background_disabled"
         android:text="Normal"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:icon="@android:drawable/alert_light_frame"
+        app:iconSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -30,11 +34,12 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
         android:text="Süreli"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,12 +52,13 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="50dp"
-        android:background="@android:color/holo_red_dark"
+        android:backgroundTint="@color/design_default_color_error"
         android:onClick="btncikis"
         android:text="Çıkış"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
+        app:icon="@android:drawable/ic_lock_power_off"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:drawableTop="@mipmap/ic_launcher_foreground"
         android:text="İsim Şehir Oyunu"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -71,4 +78,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txttarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="*****"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
